@@ -28,8 +28,9 @@ def modelo():
         
         res1=x1.varValue
         res2=x2.varValue
+        fo=value(ventanas.objective)
 
-        return render_template("Optimizacion.html", res1=res1, res2=res2)
+        return render_template("Optimizacion.html", res1=res1, res2=res2, fo=fo)
     return render_template("Optimizacion.html")
 
 
